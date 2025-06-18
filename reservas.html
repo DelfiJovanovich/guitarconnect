@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Guitar Connect</title>
+    <link href="css/estilos.css" rel="stylesheet" />
+</head>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const formulario = document.querySelector('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    observer.observe(formulario);
+  });
+</script>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagenes/guitarlogo.png" alt="Logo del sitio">
+          </div>
+
+        <!-- Icono de hamburguesa como input checkbox -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+
+        <!-- Menú desplegable -->
+        <nav class="nav-principal" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="clases.html">Clases Abiertas</a></li>
+                <li><a href="videos.html">Videos de la Comunidad</a></li>
+                <li><a href="noticias.html">Noticias del Mundo del Rock</a></li>       
+                <li><a href="reservas.html">Reserva tu Clase</a></li>                     
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>                     
+            </ul>
+        </nav>
+    </header>
+
+    <section class="formulario fade-in">
+  <h2>¡Reservá tu clase hoy!</h2>
+  <p>
+    Completa el siguiente formulario y nos pondremos en contacto para coordinar tu clase privada en línea. 
+    Es rápido, sencillo y totalmente personalizado.
+  </p>
+  <form action="#" method="post">
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" placeholder="tu@ejemplo.com" required>
+
+    <label for="nivel">Nivel de experiencia</label>
+    <select id="nivel" name="nivel">
+      <option value="principiante">Principiante</option>
+      <option value="intermedio">Intermedio</option>
+      <option value="avanzado">Avanzado</option>
+    </select>
+
+    <label for="comentarios">¿Qué querés trabajar?</label>
+    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Técnica, canciones, teoría..." required></textarea>
+
+    <button type="submit">Enviar solicitud</button>
+  </form>
+</section>
+
+    <main>
+
+        <img src="imagenes/cat4.jpg" alt="Banner Categoria" class="cat-img" />
+     
+
+    <section>
+        <div class="recuadro-intro">
+            <h2>¿Querés ir un paso más allá?</h2>
+            <article>
+                <p>
+                    Agendá una clase privada y personalizada. Vamos a enfocarnos en tus intereses, dudas y objetivos para que avances con seguridad. Elegí día y horario, y empecemos a trabajar juntxs en tu camino musical.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="clases-privadas">
+        <div class="recuadro-intro">
+            <h2>Reservá tu Clase Online</h2>
+            <h3>Aprendé con una clase personalizada, 100% online.</h3>            
+ <h2>Clases Privadas</h2>
+
+  <p>
+    Las clases privadas de <strong>Guitar Connect</strong> están pensadas para adaptarse a vos: a tu nivel, tus intereses, tu tiempo y tu estilo de aprendizaje. Son espacios uno a uno donde podés hacer todas las preguntas que quieras, trabajar en lo que más te cuesta o explorar nuevas técnicas y canciones.
+  </p>
+
+  <h3>¿Cómo funciona?</h3>
+  <p>
+    Reservás desde la web el día y horario que te quede cómodo, y te llega la confirmación por mail con el link de acceso (Zoom, Meet o similar). También podés dejar un comentario si querés trabajar algo específico.
+  </p>
+
+  <h3>¿Cuánto dura cada clase?</h3>
+  <p>
+    Cada clase tiene una duración de <strong>45 minutos</strong>, aunque a veces se extiende un poquito si estamos muy metidos en un tema 😉.
+  </p>
+
+  <h3>¿Qué necesitás para la clase?</h3>
+  <ul>
+    <li>Una guitarra (criolla, acústica o eléctrica)</li>
+    <li>Conexión a internet</li>
+    <li>Computadora o celular con cámara y micrófono</li>
+    <li>¡Y muchas ganas de tocar!</li>
+  </ul>
+
+  <h3>¿Qué se puede trabajar en las clases?</h3>
+  <ul>
+    <li>Técnica y digitación</li>
+    <li>Ritmos y acordes</li>
+    <li>Teoría musical básica</li>
+    <li>Lectura de cifrados</li>
+    <li>Canciones a elección</li>
+    <li>Improvisación</li>
+    <li>Consejos para grabar o tocar en vivo</li>
+  </ul>
+        </div>
+    </section>
+
+    </main>
+
+<footer>
+    <p>Seguinos en nuestras redes:</p>
+    <div class="redes-sociales">
+        <a href="https://www.facebook.com" target="_blank" class="icono-redes">
+            <img src="imagenes/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="icono-redes">
+            <img src="imagenes/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" class="icono-redes">
+            <img src="imagenes/tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="icono-redes">
+            <img src="imagenes/twitter.png" alt="Twitter">
+        </a>
+    </div>
+
+    <p class="footer-leyenda">
+      Los contenidos publicados en estas páginas son en el marco de un trabajo práctico de la Universidad de Palermo. Los textos, logotipos, fotografías, tipografías, etc. pueden no ser de autoría propia y sólo son utilizados a los fines prácticos del ejercicio.
+    </p>
+
+</footer>
+</body>
+</html>
