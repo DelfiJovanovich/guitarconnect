@@ -32,15 +32,19 @@ img {
 }
 
 header {
+  background-color: #1a1a1a;
+  padding: 10px 1.5em;
+  text-align: center;
+  color: #fff;
+  border-bottom: 2px solid #ff0000;
+}
+
+@media screen and (max-width: 1199px) {
+  header {
     position: sticky;
     top: 0;
     z-index: 1000;
-
-    background-color: #1a1a1a;
-    padding: 10px 1.5em;
-    text-align: center;
-    color: #fff;
-    border-bottom: 2px solid #ff0000;
+  }
 }
 
 #logo img {
@@ -325,7 +329,7 @@ figure {
     }
 }
 
-/* Responsive menu y logo */
+
 @media screen and (min-width: 768px) {
     nav.nav-principal {
         display: flex;
@@ -349,22 +353,21 @@ figure {
     }
 }
 
-/* Banner móvil vs. desktop simplificado */
-/* Por defecto (móvil) mostramos solo mobile-img */
+
 .mobile-img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* ocultamos desktop-img en móvil */
+
 .desktop-img {
     display: none;
     width: 100%;
     height: auto;
 }
 
-/* Tablet y desktop (>=768px) */
+
 @media screen and (min-width: 768px) {
     .mobile-img {
         display: none;
@@ -377,7 +380,6 @@ figure {
     }
 }
 
-/* Contenedor general y ajustes finos */
 .contenedor-general {
     max-width: 1200px;
     margin: 0 auto;
@@ -426,7 +428,7 @@ figure {
   line-height: 1.5;
 }
 
-/* Campos y labels */
+
 .formulario label {
   display: block;
   margin: 0.5em 0 0.2em;
@@ -444,7 +446,7 @@ figure {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Focus */
+
 .formulario input:focus,
 .formulario textarea:focus,
 .formulario select:focus {
@@ -453,7 +455,7 @@ figure {
   outline: none;
 }
 
-/* Botón */
+
 .formulario button[type="submit"] {
   padding: 0.7em 1.5em;
   border: none;
@@ -470,7 +472,6 @@ figure {
   transform: scale(1.05);
 }
 
-/* Animación fade-in al scroll */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -487,15 +488,15 @@ figure {
 }
 
 .callout h2 {
-  color: #ff0000;                              /* rojo llamativo */
-  font-family: 'Bebas Neue', sans-serif;       /* tipografía bold */
-  font-size: clamp(2rem, 5vw, 4rem);           /* grande y responsive */
+  color: #ff0000;                             
+  font-family: 'Bebas Neue', sans-serif;       
+  font-size: clamp(2rem, 5vw, 4rem);           
   line-height: 1.1;
 }
 
 .footer-leyenda {
-  font-size: 0.65rem;       /* muy chiquito */
-  color: #040303;              /* tono gris claro */
+  font-size: 0.65rem;       
+  color: #040303;              
   text-align: center;
   margin-top: 0.5em;
   line-height: 1.3;
