@@ -505,5 +505,10 @@ figure {
   margin-right: auto;
 }
 
+body.home .contenedor-general {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
 
 
